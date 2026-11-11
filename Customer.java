@@ -108,7 +108,7 @@ public class Customer {
     }
 
     /**
-     * Sets loyalty points, ensuring they never become negative.
+     * Sets loyalty points
      *
      * @param loyaltyPoints the new loyalty points value
      */
