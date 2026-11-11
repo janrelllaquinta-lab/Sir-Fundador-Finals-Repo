@@ -12,22 +12,21 @@ public class CafeApp {
      * @param args command-line arguments
      */
     public static void main(String[] args) {
-        // 1. Create at least two Customer objects using different constructors
+        // 1. Two Customer objects 
         Customer customer1 = new Customer("Ana Reyes", true);
         Customer customer2 = new Customer("Ben Cruz");
 
-        // 2. Demonstrate at least one setter rejecting invalid data (Negative base price test)
-        // This will print the required error message as shown in the specifications & sample output
+        // 2. One setter rejecting invalid data 
         Beverage tempItem = new Beverage();
         tempItem.setBasePrice(-5); 
-        tempItem.setBasePrice(80); // Set to valid price afterwards
+        tempItem.setBasePrice(80); 
 
-        // 3. Create at least one Beverage, one Pastry, and one Meal using both default and parameterized constructors
+        // 3. Beverage, one Pastry, and one Meal 
         Beverage bev1 = new Beverage("Iced Latte", 95.0, "B-01", "L");
         Pastry pastry1 = new Pastry("Ensaymada", 45.0, "P-01", true);
         Meal meal1 = new Meal("Chicken Adobo", 110.0, "M-01", true, 1);
 
-        // 4. Create two Order objects and add items
+        // 4. Order objects and add items
         Order order1 = new Order("1001", customer1);
         order1.addItem(bev1);
         order1.addItem(pastry1);
@@ -41,7 +40,7 @@ public class CafeApp {
         order1.printReceipt();
 
         // Create second order items
-        // Hot Chocolate created with default Beverage() constructor, then filled in with setters
+        // Hot Chocolate created with default Beverage
         Beverage bev2 = new Beverage();
         bev2.setName("Hot Chocolate");
         bev2.setBasePrice(80.0);
@@ -54,7 +53,7 @@ public class CafeApp {
         order2.addItem(bev2);
         order2.addItem(meal2);
 
-        // Print Order #2 Receipt with voucher overload (e.g., 20.00 voucher)
+        // Print Order #2 Receipt with voucher overload 
         double sub2 = order2.computeSubtotal();
         double voucherAmt = 20.00;
         double total2 = order2.computeTotal(voucherAmt);
