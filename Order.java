@@ -57,7 +57,7 @@ public class Order {
     }
 
     /**
-     * Computes the subtotal by summing the polymorphic computePrice() of each non-null item.
+     * Computes the subtotal by summing the polymorphic computePrice
      *
      * @return the subtotal amount
      */
