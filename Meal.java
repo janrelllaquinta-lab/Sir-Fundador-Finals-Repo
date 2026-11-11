@@ -50,7 +50,6 @@ public class Meal extends MenuItem {
     }
 
     /**
-     * Returns the description detailing upsize status and number of extra sides.
      *
      * @return the detailed description string
      */
@@ -88,7 +87,6 @@ public class Meal extends MenuItem {
     }
 
     /**
-     * Sets the number of extra sides, rejecting negative values.
      *
      * @param extraSides the number of extra sides
      */
