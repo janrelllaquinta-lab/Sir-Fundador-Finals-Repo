@@ -35,7 +35,6 @@ public abstract class MenuItem {
 
     /**
      * Computes the final price of the menu item.
-     * Implemented by subclasses to handle item-specific pricing rules.
      *
      * @return the computed price
      */
